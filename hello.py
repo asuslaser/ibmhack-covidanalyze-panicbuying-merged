@@ -106,6 +106,9 @@ def predict_api():
     prediction = model.predict([np.array(list(data.values()))])
 
     output = prediction[0]
+    if output > 100 :
+        output = 95
+        
     return jsonify(output)
 
 @app.route('/')
