@@ -15,7 +15,7 @@ y = dataset.iloc[:, -1]
 #Since we have a very small dataset, we will train our model with all availabe data.
 
 from sklearn.linear_model import LogisticRegression
-classifier = LogisticRegression(random_state=0,penalty='l1')
+classifier = LogisticRegression(random_state=0,penalty='l2',solver='lbfgs')
 
 #Fitting model with trainig data
 classifier.fit(X, y)
@@ -25,4 +25,4 @@ pickle.dump(classifier, open('model_panic.pkl','wb'))
 
 # Loading model to compare the results
 model = pickle.load(open('model_panic.pkl','rb'))
-print(model.predict([[10,10,10,10,10,1]]))
+print(model.predict([[1,1,1,1,1,1]]))
