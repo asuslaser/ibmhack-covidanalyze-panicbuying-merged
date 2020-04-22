@@ -7,7 +7,7 @@ You must have Scikit Learn, Pandas (for Machine Leraning Model) and Flask (for A
 ### Project Structure
 This project has four major parts :
 1. model.py - This contains code fot our Machine Learning model to predict % chance of having covid based on trainign data in 'symptoms.csv' file.
-2. app.py - This contains Flask APIs that receives covd related parameters from user through GUI or API calls, computes the predicted value based on our model and returns it.
+2. hello.py - This contains Flask APIs that receives covd related parameters from user through GUI or API calls, computes the predicted value based on our model and returns it.
 3. request.py - This uses requests module to call APIs already defined in app.py and displays the returned value.
 4. '/templates' folder - This folder contains the HTML template to allow user to enter covid parameter details and displays the predicted chance of covid %.
 
@@ -18,7 +18,7 @@ python model.py
 ```
 This would create a serialized version of our model into a file model.pkl
 
-2. Run app.py using below command to start Flask API
+2. Run hello.py using below command to start Flask API
 ```
 python hello.py
 ```
@@ -42,7 +42,7 @@ You must have Scikit Learn, Pandas (for Machine Leraning Model) and Flask (for A
 ### Project Structure
 This project has four major parts :
 1. model.py - This contains code for our Machine Learning model to predict if someone is trying to do panic buying based on training data in 'GroceriesBuyingTrend.csv' file.
-2. app.py - This contains Flask APIs that receives covd related parameters from user through GUI or API calls, computes the predicted value based on our model and returns it.
+2. hello.py - This contains Flask APIs that receives covd related parameters from user through GUI or API calls, computes the predicted value based on our model and returns it.
 3. request.py - This uses requests module to call APIs already defined in app.py and displays the returned value.
 4. '/templates' folder - This folder contains the HTML template to allow user to enter covid parameter details and displays the predicted chance of panic buying.
 
@@ -53,7 +53,7 @@ python model.py
 ```
 This would create a serialized version of our model into a file model.pkl
 
-2. Run app.py using below command to start Flask API
+2. Run hello.py using below command to start Flask API
 ```
 python hello.py
 ```
